@@ -5,11 +5,17 @@ html(lang="en")
     title CRM test
     link(rel="stylesheet", href="assets/css/normalize.css")
     link(rel="stylesheet", href="assets/manifest.css")
+    link(rel="stylesheet", href="assets/fonts/fonts.css")
     script(src="https://use.fontawesome.com/9200e1cb11.js")
   body
     div.container-wrapper
 
-      .header
+      div.header
+        div.logo.logo--header
+          a.logo__link.no-link-decoration(href="/")
+            div.logo__avatar
+              img.logo__img(src="http://via.placeholder.com/32x32")
+            div.logo__text Test
       //include ../blocks/sidebar
       //
       //div.content
