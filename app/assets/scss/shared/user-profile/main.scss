@@ -1,0 +1,22 @@
+.user-profile {
+  position: relative;
+  height: 34px;
+  padding-right: 16px;
+
+  &:after {
+    content: "";
+    background: url("img/triangle-1.svg") no-repeat;
+    position: absolute;
+    top: 48%;
+    right: 0;
+    width: 8px;
+    height: 5px;
+    display: inline-block;
+  }
+}
+
+.user-profile--header {
+  display: inline-block;
+  margin-left: 20px;
+  top: 6px;
+}
