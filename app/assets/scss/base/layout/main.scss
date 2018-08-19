@@ -1,5 +1,24 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: $background-color;
+}
+
+.container-wrapper {
+  min-height: 100%;
+  height: auto !important;
+}
+
 .fix {
   margin: auto;
   max-width: 1440px;
   min-width: 1100px;
+}
+
+.fix--page-content {
+  position: relative;
+  padding: 0 30px;
+  box-sizing: border-box;
 }

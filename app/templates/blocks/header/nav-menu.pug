@@ -1,0 +1,15 @@
+include ../../mixins/menu-item
+
+-
+  var menuItems = [
+    { text: 'Schedule manager' },
+    { text: 'Clients', linkAttributes: {'class': 'nav-menu__item--active'} },
+    { text: 'HR' },
+    { text: 'Reports' },
+    { text: 'Settings' }
+  ]
+
+nav.nav-menu.nav-menu--header
+  ul.nav-menu__list
+    each menuItem in menuItems
+      +menu-item(menuItem)

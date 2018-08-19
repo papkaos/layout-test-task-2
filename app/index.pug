@@ -1,58 +1,17 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    title CRM test
-    link(rel="stylesheet", href="assets/css/normalize.css")
-    link(rel="stylesheet", href="assets/manifest.css")
-    link(rel="stylesheet", href="assets/fonts/fonts.css")
-    script(src="https://use.fontawesome.com/9200e1cb11.js")
-  body
-    div.container-wrapper
+extends templates/layout/main
 
-      div.header
-        div.fix
-          div.logo.logo--header
-            a.logo__link.no-link-decoration(href="/")
-              div.logo__avatar
-                img.logo__img(src="http://via.placeholder.com/32x32")
-              div.logo__text Test
-          div.header__separator
-          nav.nav-menu.nav-menu--header
-            ul.nav-menu__list
-              li.nav-menu__item
-                a.nav-menu__link.no-link-decoration(href="#") Schedule manager
-              li.nav-menu__item.nav-menu__item--active
-                a.nav-menu__link.no-link-decoration(href="#") Clients
-              li.nav-menu__item
-                a.nav-menu__link.no-link-decoration(href="#") HR
-              li.nav-menu__item
-                a.nav-menu__link.no-link-decoration(href="#") Reports
-              li.nav-menu__item
-                a.nav-menu__link.no-link-decoration(href="#") Settings
-          div.header__user-menu
-            div.notifications.notifications--header
-              img.notifications__icon(src="assets/img/world.svg")
-              span.notifications__count-wrapper
-                span.notifications__count 4
-            div.header__separator.header__separator--user-menu
-            div.user-profile.user-profile--header
-              img.user-profile__img(src="assets/img/user-avatar.png")
+block content
+  include templates/blocks/subheader
 
-      div.subheader
-        div.fix.clearfix
-          div.subheader__controls
-            a.subheader__back-button(href="#")
-              img.subheader__back-button-img(src="assets/img/back-arrow.svg")
-            div.subheader__title
-              span Edit invoice
-          div.subheader__actions
-            button.btn.btn--primary(type="button") Save changes
-
-      //include ../blocks/sidebar
-      //
-      //div.content
-      //
-      //  include ../blocks/header
-      //
-      //  block content
+  div.page-content
+    div.fix.fix--page-content.clearfix
+      div.page-content__main-content
+        div.table.page-content__block
+          div.table__controls controls
+          div.table__header header
+          div.table__content content
+      div.page-content__aside-content
+        div.page-content__block.page-content__block--margin-bottom.page-content__block--inner-padding
+          span.page-content__label-text Total Amount
+          span.page-content__label-text.page-content__label-text--sum £ 11 000.00
+        div.page-content__block Two
