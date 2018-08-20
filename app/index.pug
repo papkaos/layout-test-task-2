@@ -7,7 +7,26 @@ block content
     div.fix.fix--page-content.clearfix
       div.page-content__main-content
         div.table.page-content__block
-          div.table__controls controls
+          div.table__controls
+            a.action-link.action-link--controls.no-link-decoration(href='#')
+              span.action-link__label Add bonus
+            div.table__separator.table__separator--controls
+            a.action-link.action-link--controls.no-link-decoration(href='#')
+              span.action-link__label Add deduction
+            div.table__separator.table__separator--controls
+            div.select.select--controls.select--active
+              div.select__value
+                span Paid
+              div.select__dropdown
+                div.select__option
+                  span.select__option-text Created
+                div.select__option
+                  span.select__option-text Received
+                div.select__option
+                  span.select__option-text Approved
+                div.select__option.select__option--selected
+                  span.select__option-text Paid
+
           div.table__header header
           div.table__content content
       div.page-content__aside-content

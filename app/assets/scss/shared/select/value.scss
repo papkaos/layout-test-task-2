@@ -1,0 +1,17 @@
+.select__value {
+  position: relative;
+  height: 13px;
+  padding-right: 10px;
+  color: #00c434;
+
+  &:after {
+    content: "";
+    background: url("img/triangle-2.svg") no-repeat;
+    position: absolute;
+    top: 48%;
+    right: 0;
+    width: 7px;
+    height: 4px;
+    display: inline-block;
+  }
+}

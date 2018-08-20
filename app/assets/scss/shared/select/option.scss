@@ -1,0 +1,10 @@
+.select__option {
+  padding: 10px;
+  min-width: 96px;
+  color: #7e8fa5;
+  cursor: pointer;
+}
+
+.select__option--selected {
+  background-color: #f5f8fb;
+}

@@ -1,0 +1,24 @@
+.action-link {
+  position: relative;
+  display: inline-block;
+  height: 14px;
+  color: #00a8ff;
+  font-family: "proxima_nova_ltsemibold";
+  font-size: 14px;
+  font-weight: 600;
+
+  &:before {
+    content: "";
+    background: url(img/plus-icon.svg) no-repeat;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+  }
+}
+
+.action-link--controls {
+  vertical-align: middle;
+}

@@ -1,0 +1,20 @@
+.table__separator {
+  width: 1px;
+  height: 24px;
+  //opacity: 0.3;
+  background-color: #e7e9ed;
+  display: inline-block;
+  //vertical-align: top;
+  //margin-top: 31px;
+}
+
+.table__separator--controls {
+  margin-left: 20px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+//.header__separator--user-menu {
+//  vertical-align: inherit;
+//  margin-top: 0;
+//}
