@@ -1,0 +1,47 @@
+.activity-notifications__title {
+  height: 26px;
+  color: #333c48;
+  font-family: "proxima_nova_ltsemibold";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.activity-notifications__list {
+  min-height: 143px;
+  margin-top: 11px;
+}
+
+.activity-notifications__list-item {
+  margin-bottom: 10px;
+}
+
+.activity-notifications__label {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  padding-left: 19px;
+  color: #333c48;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.activity-notifications__default-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.activity-notifications__custom-checkbox {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 12px;
+  width: 10px;
+  background: url(img/checkbox-unchecked.svg) no-repeat;
+}
+
+.activity-notifications__default-checkbox:checked ~ .activity-notifications__custom-checkbox {
+  background: url(img/checkbox-checked.svg) no-repeat;
+}

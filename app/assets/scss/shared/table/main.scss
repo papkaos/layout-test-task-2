@@ -3,3 +3,122 @@
   //border: 1px solid #e7e9ed;
   //border-radius: 4px;
 }
+
+.table__header {
+  padding: 8px 43px 12px 31px;
+  background-color: #f8f8f8;
+}
+
+.table__header-item {
+  display: inline-block;
+  line-height: 14px;
+}
+
+.table__header-item:nth-child(1) {
+  width: 39px;
+}
+
+.table__header-item:nth-child(2) {
+  width: 99px;
+}
+
+.table__header-item:nth-child(3) {
+  width: 105px;
+}
+
+.table__header-item:nth-child(4) {
+  width: 139px;
+}
+
+.table__header-item:nth-child(5) {
+  width: 141px;
+}
+
+.table__header-item:nth-child(6) {
+  width: 119px;
+}
+
+.table__header-item:nth-child(7) {
+  width: 92px;
+}
+
+.table__header-item:nth-child(8) {
+  width: 91px;
+}
+
+.table__title-holder {
+  display: inline-block;
+  position: relative;
+  padding-right: 11px;
+}
+
+.table__title-holder--sort-asc:after {
+  content: "";
+  background: url(img/triangle-3.svg) no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 7px;
+  height: 4px;
+  display: inline-block;
+}
+
+.table__header-title {
+  height: 14px;
+  color: #7e8fa5;
+  font-family: "proxima_nova_ltsemibold";
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.table__row {
+  padding: 16px 20px 13px 31px;
+}
+
+.table__cell {
+  display: inline-block;
+  height: 21px;
+  color: #333c48;
+  font-family: "Proxima Nova";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  padding-right: 25px;
+}
+
+.table__cell--bold {
+  font-family: "proxima_nova_ltsemibold";
+  font-weight: 600;
+}
+
+.table__cell:nth-child(1) {
+  width: 14px;
+}
+
+.table__cell:nth-child(2) {
+  width: 74px;
+}
+
+.table__cell:nth-child(3) {
+  width: 80px;
+}
+
+.table__cell:nth-child(4) {
+  width: 114px;
+}
+
+.table__cell:nth-child(5) {
+  width: 116px;
+}
+
+.table__cell:nth-child(6) {
+  width: 94px;
+}
+
+.table__cell:nth-child(7) {
+  width: 67px;
+}
+
+.table__cell:nth-child(8) {
+  width: 66px;
+}

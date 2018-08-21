@@ -27,10 +27,83 @@ block content
                 div.select__option.select__option--selected
                   span.select__option-text Paid
 
-          div.table__header header
-          div.table__content content
+          div.table__header
+            div.table__header-item
+              div.table__title-holder
+                span.table__header-title #
+            div.table__header-item
+              div.table__title-holder.table__title-holder--sort-asc
+                span.table__header-title Date
+            div.table__header-item
+              div.table__title-holder
+                span.table__header-title Client
+            div.table__header-item
+              div.table__title-holder
+                span.table__header-title Service
+            div.table__header-item
+              div.table__title-holder
+                span.table__header-title Resource
+            div.table__header-item
+              div.table__title-holder
+                span.table__header-title Start/End time
+            div.table__header-item
+              div.table__title-holder
+                span.table__header-title Paid hours
+            div.table__header-item
+              div.table__title-holder
+                span.table__header-title Pay rate
+            div.table__header-item
+              div.table__title-holder.table__title-holder--sort-asc
+                span.table__header-title Total pay
+
+          div.table__content
+            div.table__row
+              div.table__cell
+                span 1
+              div.table__cell
+                span 2016/01/02
+              div.table__cell
+                span Señor Floss
+              div.table__cell
+                span Cost Cutting
+              div.table__cell
+                span Cost Cutting
+              div.table__cell
+                span 19:30 – 23:30
+              div.table__cell
+                span 140
+              div.table__cell
+                span £ 11.50
+              div.table__cell.table__cell--bold
+                span £ 23.00
+
+
       div.page-content__aside-content
         div.page-content__block.page-content__block--margin-bottom.page-content__block--inner-padding
           span.page-content__label-text Total Amount
           span.page-content__label-text.page-content__label-text--sum £ 11 000.00
-        div.page-content__block Two
+        div.page-content__block
+          div.page-content__inner-box.page-content__inner-box--border-bottom
+            div.activity-notifications
+              div.activity-notifications__title
+                span Activity Notifications
+              div.activity-notifications__list
+                div.activity-notifications__list-item
+                  label.activity-notifications__label
+                    input.activity-notifications__default-checkbox(type="checkbox")
+                    | Vacation Home Rental Success
+                    span.activity-notifications__custom-checkbox
+                div.activity-notifications__list-item
+                  label.activity-notifications__label
+                    input.activity-notifications__default-checkbox(type="checkbox")
+                    | Vacation Home Rental Success
+                    span.activity-notifications__custom-checkbox
+                div.activity-notifications__list-item
+                  label.activity-notifications__label
+                    input.activity-notifications__default-checkbox(type="checkbox")
+                    | Vacation Home Rental Success
+                    span.activity-notifications__custom-checkbox
+
+          div.page-content__inner-box
+            button.btn(type="button") Cancel
+            button.btn.btn--primary.btn--right-align(type="button") Update
