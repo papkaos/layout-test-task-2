@@ -7,56 +7,15 @@ block content
     div.fix.fix--page-content.clearfix
       div.page-content__main-content
         div.table.page-content__block
-          div.table__controls
-            a.action-link.action-link--controls.no-link-decoration(href='#')
-              span.action-link__label Add bonus
-            div.table__separator.table__separator--controls
-            a.action-link.action-link--controls.no-link-decoration(href='#')
-              span.action-link__label Add deduction
-            div.table__separator.table__separator--controls
-            div.select.select--controls.select--active
-              div.select__value
-                span Paid
-              div.select__dropdown
-                div.select__option
-                  span.select__option-text Created
-                div.select__option
-                  span.select__option-text Received
-                div.select__option
-                  span.select__option-text Approved
-                div.select__option.select__option--selected
-                  span.select__option-text Paid
+          include templates/blocks/table/controls
 
-          div.table__header
-            div.table__header-item
-              div.table__title-holder
-                span.table__header-title #
-            div.table__header-item
-              div.table__title-holder.table__title-holder--sort-asc
-                span.table__header-title Date
-            div.table__header-item
-              div.table__title-holder
-                span.table__header-title Client
-            div.table__header-item
-              div.table__title-holder
-                span.table__header-title Service
-            div.table__header-item
-              div.table__title-holder
-                span.table__header-title Resource
-            div.table__header-item
-              div.table__title-holder
-                span.table__header-title Start/End time
-            div.table__header-item
-              div.table__title-holder
-                span.table__header-title Paid hours
-            div.table__header-item
-              div.table__title-holder
-                span.table__header-title Pay rate
-            div.table__header-item
-              div.table__title-holder.table__title-holder--sort-asc
-                span.table__header-title Total pay
+          include templates/blocks/table/header
 
           div.table__content
+            include templates/blocks/table/row
+            include templates/blocks/table/row
+            include templates/blocks/table/row
+
             div.table__row
               div.table__cell
                 span 1
@@ -76,34 +35,12 @@ block content
                 span £ 11.50
               div.table__cell.table__cell--bold
                 span £ 23.00
+              div.table__cell.table__cell--icon
+                div.comment.comment--unread
+                  span.comment__icon
 
 
       div.page-content__aside-content
-        div.page-content__block.page-content__block--margin-bottom.page-content__block--inner-padding
-          span.page-content__label-text Total Amount
-          span.page-content__label-text.page-content__label-text--sum £ 11 000.00
-        div.page-content__block
-          div.page-content__inner-box.page-content__inner-box--border-bottom
-            div.activity-notifications
-              div.activity-notifications__title
-                span Activity Notifications
-              div.activity-notifications__list
-                div.activity-notifications__list-item
-                  label.activity-notifications__label
-                    input.activity-notifications__default-checkbox(type="checkbox")
-                    | Vacation Home Rental Success
-                    span.activity-notifications__custom-checkbox
-                div.activity-notifications__list-item
-                  label.activity-notifications__label
-                    input.activity-notifications__default-checkbox(type="checkbox")
-                    | Vacation Home Rental Success
-                    span.activity-notifications__custom-checkbox
-                div.activity-notifications__list-item
-                  label.activity-notifications__label
-                    input.activity-notifications__default-checkbox(type="checkbox")
-                    | Vacation Home Rental Success
-                    span.activity-notifications__custom-checkbox
+        include templates/blocks/total-amount
 
-          div.page-content__inner-box
-            button.btn(type="button") Cancel
-            button.btn.btn--primary.btn--right-align(type="button") Update
+        include templates/blocks/notifications
